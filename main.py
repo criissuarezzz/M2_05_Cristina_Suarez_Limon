@@ -17,7 +17,7 @@ elif (numero1 == 0) or (numero2==0) or (numero3==0):
 else:
     print("No están en orden ascendente")
 
-
+####
 print("\n\n\n")
 
 lista_numeros=[]
@@ -41,4 +41,8 @@ elif (lista_numeros[0] == 0) or (lista_numeros[1]==0) or (lista_numeros[2]==0):
 else:
     print("No están en orden ascendente")
         
-
+####
+print("\n\n\n")
+secuencia_letras=input("Introduce una secuencia de letras:")
+a_en_texto=secuencia_letras.count('a')
+print("En esta secuencia hay", a_en_texto, "'a'")

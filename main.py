@@ -45,4 +45,13 @@ else:
 print("\n\n\n")
 secuencia_letras=input("Introduce una secuencia de letras:")
 a_en_texto=secuencia_letras.count('a')
-print("En esta secuencia hay", a_en_texto, "'a'")
+enunciado= print("Escribe una secuencia de letras o un punto para terminar")
+def cadena_a (enunciado):  
+    while True:
+        secuencia_letras=input("Introduce una secuencia de letras:")
+        a_en_texto=secuencia_letras.count('a')
+        print("En esta secuencia hay", a_en_texto, "'a'")
+        if "." in secuencia_letras:
+         break
+    return "En esta secuencia hay", a_en_texto, "a"
+print(cadena_a(enunciado))

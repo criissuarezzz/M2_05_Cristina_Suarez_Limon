@@ -55,3 +55,4 @@ def cadena_a (enunciado):
          break
     return "En esta secuencia hay" +a_en_texto+ "a"
 print(cadena_a(enunciado))
+

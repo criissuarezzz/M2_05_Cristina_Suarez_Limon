@@ -53,5 +53,5 @@ def cadena_a (enunciado):
         print("En esta secuencia hay", a_en_texto, "'a'")
         if "." in secuencia_letras:
          break
-    return "En esta secuencia hay", a_en_texto, "a"
+    return "En esta secuencia hay" +a_en_texto+ "a"
 print(cadena_a(enunciado))

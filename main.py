@@ -1,3 +1,7 @@
+from timeit import repeat
+from turtle import end_fill
+
+
 numero1=int(input("Introduce un número:"))
 numero2= int(input("Introduce otro número:"))
 numero3= int(input("Introduce otro número:"))
@@ -43,16 +47,33 @@ else:
         
 ####
 print("\n\n\n")
-secuencia_letras=input("Introduce una secuencia de letras:")
-a_en_texto=secuencia_letras.count('a')
-enunciado= print("Escribe una secuencia de letras o un punto para terminar")
-def cadena_a (enunciado):  
-    while True:
-        secuencia_letras=input("Introduce una secuencia de letras:")
-        a_en_texto=secuencia_letras.count('a')
-        print("En esta secuencia hay", a_en_texto, "'a'")
-        if "." in secuencia_letras:
-         break
-    return "En esta secuencia hay" +a_en_texto+ "a"
-print(cadena_a(enunciado))
+Enunciado = input("Introduce una secuencia de letras: ")
+contador_a = 0
+for letra in Enunciado:
+  if letra == "a":
+    contador_a = contador_a + 1
+  elif Enunciado == ".":
+    break
+print("En la secuencia de letras hay", contador_a,  "letras a.")
 
+
+#######
+print("\n\n\n")
+lista_palabras=['Parada', 'Moto', 'panda','pato', 'tapa', 'socorrista', 'edificio', 'Wi-Fi']
+print(lista_palabras[0], len(lista_palabras[0]))
+print(lista_palabras[1], len(lista_palabras[1]))
+print(lista_palabras[2], len(lista_palabras[2]))
+print(lista_palabras[3], len(lista_palabras[3]))
+print(lista_palabras[4], len(lista_palabras[4]))
+print(lista_palabras[5], len(lista_palabras[5]))
+print(lista_palabras[6], len(lista_palabras[6]))    
+print(lista_palabras[7], len(lista_palabras[7]))
+
+
+def mas_grande(lista_palabras):
+    max=len(lista_palabras[0])
+    for x in lista_palabras:
+        if x>max:
+            max=0
+    return max
+print("La palabra más larga es", mas_grande(len(lista_palabras)))
